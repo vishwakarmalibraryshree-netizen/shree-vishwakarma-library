@@ -1,0 +1,128 @@
+type Timestamp = int;
+type StudentId = nat;
+type Student = 
+ record {
+   address: text;
+   entryDate: Timestamp;
+   expiryDate: Timestamp;
+   fatherName: text;
+   feesAmount: nat;
+   feesType: FeesType;
+   id: StudentId;
+   isActive: bool;
+   mobile: text;
+   name: text;
+   seatNumber: SeatNumber;
+   studentId: text;
+ };
+type SenderRole = 
+ variant {
+   admin;
+   student;
+ };
+type SeatNumber = nat;
+type Seat = 
+ record {
+   isOccupied: bool;
+   occupiedBy: opt text;
+   seatNumber: SeatNumber;
+ };
+type RevenueByPaymentType = 
+ record {
+   cashTotal: nat;
+   grandTotal: nat;
+   onlineTotal: nat;
+ };
+type QuoteId = nat;
+type Quote = 
+ record {
+   author: text;
+   id: QuoteId;
+   quote: text;
+ };
+type NoticeId = nat;
+type Notice = 
+ record {
+   content: text;
+   createdAt: Timestamp;
+   id: NoticeId;
+   isActive: bool;
+   title: text;
+ };
+type MessageId = nat;
+type Message = 
+ record {
+   content: text;
+   id: MessageId;
+   isRead: bool;
+   recipientId: text;
+   senderId: text;
+   senderName: text;
+   senderRole: SenderRole;
+   timestamp: Timestamp;
+ };
+type LibrarySettings = 
+ record {
+   address: text;
+   facilities: vec text;
+   libraryName: text;
+   openingHours: text;
+   phone: text;
+   totalSeats: nat;
+ };
+type FeesType = 
+ variant {
+   cash;
+   online;
+ };
+type DailyRevenue = 
+ record {
+   cashAmount: nat;
+   date: text;
+   onlineAmount: nat;
+   total: nat;
+ };
+service : {
+  addNotice: (title: text, content: text) -> (Notice);
+  addQuote: ("text": text, author: text) -> (Quote);
+  addStudent: (name: text, mobile: text, seatNumber: SeatNumber, feesType:
+   FeesType, feesAmount: nat, entryDate: Timestamp, address: text,
+   fatherName: text, studentId: text) -> (Student);
+  deleteNotice: (id: NoticeId) -> (bool);
+  deleteQuote: (id: QuoteId) -> (bool);
+  deleteStudent: (id: StudentId) -> (bool);
+  getActiveNotices: () -> (vec Notice) query;
+  getAllMessages: () -> (vec Message) query;
+  getAllQuotes: () -> (vec Quote) query;
+  getAllSeats: () -> (vec Seat) query;
+  getAllStudents: () -> (vec Student) query;
+  getAvailableSeats: () -> (vec Seat) query;
+  getDailyRevenue: (date: text) -> (DailyRevenue) query;
+  getExpiredStudents: () -> (vec Student) query;
+  getMessagesForStudent: (studentId: text) -> (vec Message) query;
+  getMonthlyRevenue: (year: nat, month: nat) -> (nat) query;
+  getOccupiedSeats: () -> (vec Seat) query;
+  getRandomQuote: () -> (opt Quote) query;
+  getRevenueByPaymentType: () -> (RevenueByPaymentType) query;
+  getRevenueChart: () -> (vec DailyRevenue) query;
+  getSeatStatus: (seatNumber: SeatNumber) -> (opt Seat) query;
+  getSettings: () -> (LibrarySettings) query;
+  getStudent: (id: StudentId) -> (opt Student) query;
+  getStudentsExpiringSoon: () -> (vec Student) query;
+  getTotalRevenue: () -> (nat) query;
+  getUnreadCount: (recipientId: text) -> (nat) query;
+  initializeSeats: (totalSeats: nat) -> ();
+  markMessageRead: (id: MessageId) -> (bool);
+  searchStudents: (term: text) -> (vec Student) query;
+  sendBroadcast: (content: text) -> (nat);
+  sendMessage: (senderId: text, senderName: text, senderRole: SenderRole,
+   recipientId: text, content: text) -> (Message);
+  updateAdminCredentials: (currentPassword: text, newUsername: text,
+   newEmail: text, newPassword: text) -> (bool);
+  updateNotice: (updated: Notice) -> (bool);
+  updateSeatOccupancy: (seatNumber: SeatNumber, isOccupied: bool, occupiedBy:
+   opt text) -> (bool);
+  updateSettings: (updated: LibrarySettings) -> ();
+  updateStudent: (updated: Student) -> (bool);
+  verifyAdmin: (username: text, password: text) -> (bool);
+}

@@ -1,0 +1,133 @@
+// Version: 1.0.0
+type AdminProfile__266592254 =
+  {email : Text; passwordHash : Text; username : Text};
+type FeesType__790327085 = {#cash; #online};
+type LibrarySettings__812672279 =
+  {
+    address : Text;
+    facilities : [Text];
+    libraryName : Text;
+    openingHours : Text;
+    phone : Text;
+    totalSeats : Nat
+  };
+type MessageId__291319400 = Nat;
+type Message__137520990 = Message__714344397;
+type Message__714344397 =
+  {
+    content : Text;
+    id : MessageId__291319400;
+    isRead : Bool;
+    recipientId : Text;
+    senderId : Text;
+    senderName : Text;
+    senderRole : SenderRole__662847784;
+    timestamp : Timestamp__301639476
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NoticeId__539436524 = Nat;
+type Notice__313028600 =
+  {
+    content : Text;
+    createdAt : Timestamp__301639476;
+    id : NoticeId__539436524;
+    isActive : Bool;
+    title : Text
+  };
+type Notice__38796809 = Notice__313028600;
+type QuoteId__928430161 = Nat;
+type Quote__360373269 =
+  {author : Text; id : QuoteId__928430161; quote : Text};
+type Quote__753505323 = Quote__360373269;
+type SeatNumber__583491304 = Nat;
+type Seat__721846463 = Seat__835159835;
+type Seat__835159835 =
+  {isOccupied : Bool; occupiedBy : ?Text; seatNumber : SeatNumber__583491304};
+type SenderRole__662847784 = {#admin; #student};
+type StudentId__585118929 = Nat;
+type Student__26715999 =
+  {
+    address : Text;
+    entryDate : Timestamp__301639476;
+    expiryDate : Timestamp__301639476;
+    fatherName : Text;
+    feesAmount : Nat;
+    feesType : FeesType__790327085;
+    id : StudentId__585118929;
+    isActive : Bool;
+    mobile : Text;
+    name : Text;
+    seatNumber : SeatNumber__583491304;
+    studentId : Text
+  };
+type Student__997261203 = Student__26715999;
+type Timestamp__301639476 = Int;
+actor {
+  stable admin :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?AdminProfile__266592254]];
+      var elementIndex : Nat__490723111
+    };
+  stable messages :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Message__137520990]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextMessageId :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Nat]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextNoticeId :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Nat]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextQuoteId :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Nat]];
+      var elementIndex : Nat__490723111
+    };
+  stable nextStudentId :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Nat]];
+      var elementIndex : Nat__490723111
+    };
+  stable notices :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Notice__38796809]];
+      var elementIndex : Nat__490723111
+    };
+  stable quotes :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Quote__753505323]];
+      var elementIndex : Nat__490723111
+    };
+  stable seats :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Seat__721846463]];
+      var elementIndex : Nat__490723111
+    };
+  stable settings :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?LibrarySettings__812672279]];
+      var elementIndex : Nat__490723111
+    };
+  stable students :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Student__997261203]];
+      var elementIndex : Nat__490723111
+    }
+};

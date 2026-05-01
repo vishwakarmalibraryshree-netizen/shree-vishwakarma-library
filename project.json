@@ -1,0 +1,27 @@
+{
+  "overview": "Shree Vishwakarma Library is a complete library management platform for admins and students. It features real-time 50-seat tracking, student enrollment with printable receipts, revenue analytics, two-way messaging, notice board, motivational quotes, and a full admin dashboard — all in English.",
+  "features": [
+    "Real-time 50-seat grid showing Available (green) and Occupied (red with student name)",
+    "Student enrollment with name, mobile, seat, fees (cash/online), address, father name, auto 30-day expiry, printable receipt",
+    "Admin dashboard with login, expiring membership alerts, and full student management",
+    "Detailed revenue reports with daily bar charts, monthly view, and cash vs online breakdown",
+    "Two-way messaging: students send support messages, admin replies and broadcasts announcements",
+    "Notice board for library announcements",
+    "Motivational quotes section with admin management",
+    "Settings panel to update admin credentials and library information",
+    "Library details displayed in info boxes",
+    "Saraswati logo in header",
+    "Entire app in English only"
+  ],
+  "category": "business-productivity",
+  "tags": [
+    "library",
+    "management",
+    "seat-tracking",
+    "student",
+    "admin",
+    "revenue",
+    "messaging"
+  ],
+  "last_updated": "2026-05-01T02:20:51.786Z"
+}
