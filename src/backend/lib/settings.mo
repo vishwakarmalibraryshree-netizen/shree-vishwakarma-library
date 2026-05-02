@@ -41,7 +41,7 @@ module {
     {
       username = "admin";
       email = "";
-      passwordHash = hashPassword("library@123");
+      passwordHash = hashPassword("admin123");
     };
   };
 };

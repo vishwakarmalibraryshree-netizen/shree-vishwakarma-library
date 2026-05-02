@@ -39,6 +39,9 @@ const LazyAdminSettings = lazy(() =>
     default: m.AdminSettings,
   })),
 );
+const LazyPoster = lazy(() =>
+  import("./pages/PosterPage").then((m) => ({ default: m.PosterPage })),
+);
 
 function Wrap({ children }: { children: React.ReactNode }) {
   return (
@@ -54,11 +57,33 @@ function Wrap({ children }: { children: React.ReactNode }) {
   );
 }
 
+// Root route: Layout wraps most pages; poster route bypasses it entirely
 const rootRoute = createRootRoute({
   component: () => (
     <Layout>
       <Outlet />
     </Layout>
+  ),
+});
+
+// Poster uses a separate root so it never receives the Layout wrapper
+const posterRootRoute = createRootRoute({
+  component: () => (
+    <Suspense
+      fallback={
+        <div
+          className="min-h-screen flex items-center justify-center"
+          style={{ background: "oklch(0.14 0.04 15)" }}
+        >
+          <div
+            className="w-8 h-8 rounded-full border-2 border-t-transparent animate-spin"
+            style={{ borderColor: "oklch(0.65 0.22 40)" }}
+          />
+        </div>
+      }
+    >
+      <Outlet />
+    </Suspense>
   ),
 });
 
@@ -162,7 +187,14 @@ const adminSettingsRoute = createRoute({
   ),
 });
 
-const routeTree = rootRoute.addChildren([
+// Poster route — standalone, no header/footer
+const posterRoute = createRoute({
+  getParentRoute: () => posterRootRoute,
+  path: "/poster",
+  component: () => <LazyPoster />,
+});
+
+const mainRouteTree = rootRoute.addChildren([
   homeRoute,
   enrollRoute,
   seatsRoute,
@@ -174,7 +206,15 @@ const routeTree = rootRoute.addChildren([
   adminSettingsRoute,
 ]);
 
-export const router = createRouter({ routeTree });
+const posterRouteTree = posterRootRoute.addChildren([posterRoute]);
+
+// Select route tree based on current path so /poster has no Layout
+const isPosterPath =
+  typeof window !== "undefined" && window.location.pathname === "/poster";
+
+export const router = createRouter({
+  routeTree: isPosterPath ? posterRouteTree : mainRouteTree,
+});
 
 declare module "@tanstack/react-router" {
   interface Register {

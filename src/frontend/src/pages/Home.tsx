@@ -164,7 +164,8 @@ export function HomePage() {
   }, [available, occupied]);
 
   const handleShareLink = useCallback(() => {
-    navigator.clipboard.writeText(window.location.href).then(() => {
+    const posterUrl = `${window.location.origin}/poster`;
+    navigator.clipboard.writeText(posterUrl).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
     });

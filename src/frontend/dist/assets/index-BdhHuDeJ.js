@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Home-Bw-G1vpv.js","assets/types-CeHNxeEG.js","assets/user-plus-DCrm_9WV.js","assets/shield-DmsgxkMK.js","assets/refresh-cw-WxG8AEXo.js","assets/Enroll-WBjGBu2S.js","assets/badge-CWeIkufx.js","assets/index-D9SYxO04.js","assets/utils-2v2HxlWs.js","assets/button-DgyTb062.js","assets/card-C8GH-zEu.js","assets/indian-rupee-BMerw35x.js","assets/calendar-BCuOHMgu.js","assets/Seats-Cbvk1uEt.js","assets/skeleton-CPVH6K9v.js","assets/Notices-RMf84GPP.js","assets/plus-CLtDvuzT.js","assets/square-pen-fp1nv1Iq.js","assets/trash-2-B7ys0dFa.js","assets/Dashboard-GKJdAsFx.js","assets/triangle-alert-CNDl6Vs0.js","assets/Students-CN-xWHmK.js","assets/Revenue-Dp9aL1pD.js","assets/Messages-Bp6pfZgB.js","assets/AdminSettings-Dft8MLlU.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Home-BmvjLbOt.js","assets/types-DBKfhn4T.js","assets/user-plus-i4KnQIBL.js","assets/printer-D4uQe6Dv.js","assets/wifi-BCNKr1LZ.js","assets/shield-6FiU6PC8.js","assets/refresh-cw-CnYHQM3D.js","assets/Enroll-yWghmBgv.js","assets/badge-C-ha7r2N.js","assets/index-C8zD6jex.js","assets/utils-2v2HxlWs.js","assets/button-PW5s1p9c.js","assets/card-CQko05Jj.js","assets/indian-rupee-CjJD7RkQ.js","assets/calendar-D8yT4LZ4.js","assets/Seats-CIKOdpXK.js","assets/skeleton-Cg4P7mLd.js","assets/Notices-Bs4A1dc0.js","assets/plus-BpSav8M0.js","assets/square-pen-BmzW192b.js","assets/trash-2-CYw5hwr2.js","assets/Dashboard-Dg0ip94a.js","assets/triangle-alert-B_hQBXhV.js","assets/Students-BME5Sp8J.js","assets/Revenue-Dng1cQHy.js","assets/Messages-D1EUViqp.js","assets/AdminSettings-Cn6gtdiN.js","assets/PosterPage-DeIyGql2.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __typeError = (msg) => {
   throw TypeError(msg);
@@ -28920,7 +28920,7 @@ function sortRoutes(routes) {
   return flatRoutes;
 }
 function processRouteTree({
-  routeTree: routeTree2,
+  routeTree,
   initRoute
 }) {
   const routesById = {};
@@ -28946,7 +28946,7 @@ function processRouteTree({
       }
     });
   };
-  recurseRoutes([routeTree2]);
+  recurseRoutes([routeTree]);
   const flatRoutes = sortRoutes(Object.values(routesById));
   return { routesById, routesByPath, flatRoutes };
 }
@@ -34695,35 +34695,38 @@ function Layout({ children }) {
   ] });
 }
 const LazyHome = reactExports.lazy(
-  () => __vitePreload(() => import("./Home-Bw-G1vpv.js"), true ? __vite__mapDeps([0,1,2,3,4]) : void 0).then((m2) => ({ default: m2.HomePage }))
+  () => __vitePreload(() => import("./Home-BmvjLbOt.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0).then((m2) => ({ default: m2.HomePage }))
 );
 const LazyEnroll = reactExports.lazy(
-  () => __vitePreload(() => import("./Enroll-WBjGBu2S.js"), true ? __vite__mapDeps([5,6,7,8,9,10,1,2,11,12]) : void 0).then((m2) => ({ default: m2.EnrollPage }))
+  () => __vitePreload(() => import("./Enroll-yWghmBgv.js"), true ? __vite__mapDeps([7,8,9,10,11,12,1,3,2,13,14]) : void 0).then((m2) => ({ default: m2.EnrollPage }))
 );
 const LazySeats = reactExports.lazy(
-  () => __vitePreload(() => import("./Seats-Cbvk1uEt.js"), true ? __vite__mapDeps([13,9,7,8,14,1,4]) : void 0).then((m2) => ({ default: m2.SeatsPage }))
+  () => __vitePreload(() => import("./Seats-CIKOdpXK.js"), true ? __vite__mapDeps([15,11,9,10,16,1,6]) : void 0).then((m2) => ({ default: m2.SeatsPage }))
 );
 const LazyNotices = reactExports.lazy(
-  () => __vitePreload(() => import("./Notices-RMf84GPP.js"), true ? __vite__mapDeps([15,14,8,1,16,12,17,18]) : void 0).then((m2) => ({ default: m2.NoticesPage }))
+  () => __vitePreload(() => import("./Notices-Bs4A1dc0.js"), true ? __vite__mapDeps([17,16,10,1,18,14,19,20]) : void 0).then((m2) => ({ default: m2.NoticesPage }))
 );
 const LazyAdminDashboard = reactExports.lazy(
-  () => __vitePreload(() => import("./Dashboard-GKJdAsFx.js"), true ? __vite__mapDeps([19,6,7,8,10,14,1,11,20]) : void 0).then((m2) => ({
+  () => __vitePreload(() => import("./Dashboard-Dg0ip94a.js"), true ? __vite__mapDeps([21,8,9,10,12,16,1,13,22]) : void 0).then((m2) => ({
     default: m2.AdminDashboard
   }))
 );
 const LazyAdminStudents = reactExports.lazy(
-  () => __vitePreload(() => import("./Students-CN-xWHmK.js"), true ? __vite__mapDeps([21,6,7,8,10,14,1,18,17,20]) : void 0).then((m2) => ({ default: m2.AdminStudents }))
+  () => __vitePreload(() => import("./Students-BME5Sp8J.js"), true ? __vite__mapDeps([23,8,9,10,12,16,1,20,19,22]) : void 0).then((m2) => ({ default: m2.AdminStudents }))
 );
 const LazyAdminRevenue = reactExports.lazy(
-  () => __vitePreload(() => import("./Revenue-Dp9aL1pD.js"), true ? __vite__mapDeps([22,10,8,14,1,11]) : void 0).then((m2) => ({ default: m2.AdminRevenue }))
+  () => __vitePreload(() => import("./Revenue-Dng1cQHy.js"), true ? __vite__mapDeps([24,12,10,16,1,13]) : void 0).then((m2) => ({ default: m2.AdminRevenue }))
 );
 const LazyAdminMessages = reactExports.lazy(
-  () => __vitePreload(() => import("./Messages-Bp6pfZgB.js"), true ? __vite__mapDeps([23,6,7,8,10,14,1]) : void 0).then((m2) => ({ default: m2.AdminMessages }))
+  () => __vitePreload(() => import("./Messages-D1EUViqp.js"), true ? __vite__mapDeps([25,8,9,10,12,16,1]) : void 0).then((m2) => ({ default: m2.AdminMessages }))
 );
 const LazyAdminSettings = reactExports.lazy(
-  () => __vitePreload(() => import("./AdminSettings-Dft8MLlU.js"), true ? __vite__mapDeps([24,6,7,8,14,1,3,16,18]) : void 0).then((m2) => ({
+  () => __vitePreload(() => import("./AdminSettings-Cn6gtdiN.js"), true ? __vite__mapDeps([26,8,9,10,16,1,5,18,20]) : void 0).then((m2) => ({
     default: m2.AdminSettings
   }))
+);
+const LazyPoster = reactExports.lazy(
+  () => __vitePreload(() => import("./PosterPage-DeIyGql2.js"), true ? __vite__mapDeps([27,1,4,3]) : void 0).then((m2) => ({ default: m2.PosterPage }))
 );
 function Wrap({ children }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -34736,6 +34739,28 @@ function Wrap({ children }) {
 }
 const rootRoute = createRootRoute({
   component: () => /* @__PURE__ */ jsxRuntimeExports.jsx(Layout, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {}) })
+});
+const posterRootRoute = createRootRoute({
+  component: () => /* @__PURE__ */ jsxRuntimeExports.jsx(
+    reactExports.Suspense,
+    {
+      fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "div",
+        {
+          className: "min-h-screen flex items-center justify-center",
+          style: { background: "oklch(0.14 0.04 15)" },
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: "w-8 h-8 rounded-full border-2 border-t-transparent animate-spin",
+              style: { borderColor: "oklch(0.65 0.22 40)" }
+            }
+          )
+        }
+      ),
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {})
+    }
+  )
 });
 function isAdminLoggedIn() {
   try {
@@ -34797,7 +34822,12 @@ const adminSettingsRoute = createRoute({
   beforeLoad: adminGuard,
   component: () => /* @__PURE__ */ jsxRuntimeExports.jsx(Wrap, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(LazyAdminSettings, {}) })
 });
-const routeTree = rootRoute.addChildren([
+const posterRoute = createRoute({
+  getParentRoute: () => posterRootRoute,
+  path: "/poster",
+  component: () => /* @__PURE__ */ jsxRuntimeExports.jsx(LazyPoster, {})
+});
+const mainRouteTree = rootRoute.addChildren([
   homeRoute,
   enrollRoute,
   seatsRoute,
@@ -34808,7 +34838,11 @@ const routeTree = rootRoute.addChildren([
   adminMessagesRoute,
   adminSettingsRoute
 ]);
-const router = createRouter({ routeTree });
+const posterRouteTree = posterRootRoute.addChildren([posterRoute]);
+const isPosterPath = typeof window !== "undefined" && window.location.pathname === "/poster";
+const router = createRouter({
+  routeTree: isPosterPath ? posterRouteTree : mainRouteTree
+});
 function App() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(AuthProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(RouterProvider, { router }) });
 }
@@ -34822,8 +34856,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 export {
   Bell as B,
   FeesType as F,
-  LayoutDashboard as L,
-  MessageCircle as M,
+  Lock as L,
+  MapPin as M,
   React$5 as R,
   SenderRole as S,
   TrendingUp as T,
@@ -34831,17 +34865,17 @@ export {
   X,
   __vitePreload as _,
   ue as a,
-  useNavigate as b,
+  BookOpen as b,
   createLucideIcon as c,
-  Link as d,
-  Settings as e,
-  BookOpen as f,
-  useUpdateAdminCredentials as g,
-  Lock as h,
+  useNavigate as d,
+  LayoutDashboard as e,
+  Link as f,
+  MessageCircle as g,
+  Settings as h,
   useQueryClient as i,
   jsxRuntimeExports as j,
-  MapPin as k,
-  SaraswatiLogo as l,
+  SaraswatiLogo as k,
+  useUpdateAdminCredentials as l,
   User as m,
   commonjsGlobal as n,
   getDefaultExportFromCjs as o,
