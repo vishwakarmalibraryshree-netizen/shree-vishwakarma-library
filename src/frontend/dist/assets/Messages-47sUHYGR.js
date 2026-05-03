@@ -1,9 +1,9 @@
-import { c as createLucideIcon, u as useAuth, d as useNavigate, r as reactExports, S as SenderRole, j as jsxRuntimeExports, g as MessageCircle, U as Users, a as ue } from "./index-BdhHuDeJ.js";
-import { B as Badge } from "./badge-C-ha7r2N.js";
-import { C as Card, c as CardContent } from "./card-CQko05Jj.js";
-import { S as Skeleton } from "./skeleton-Cg4P7mLd.js";
-import { m as useAllMessages, h as useAllStudents, n as useSendMessage, o as useMarkMessageRead } from "./types-DBKfhn4T.js";
-import "./index-C8zD6jex.js";
+import { c as createLucideIcon, u as useAuth, d as useNavigate, r as reactExports, S as SenderRole, j as jsxRuntimeExports, g as MessageCircle, U as Users, a as ue } from "./index-BX6EltLE.js";
+import { B as Badge } from "./badge-gB9u5iZY.js";
+import { C as Card, c as CardContent } from "./card-OHuLbmmG.js";
+import { S as Skeleton } from "./skeleton-YomDqqRk.js";
+import { m as useAllMessages, h as useAllStudents, n as useSendMessage, o as useMarkMessageRead } from "./types-DKmKknrx.js";
+import "./index-CuoKMjoF.js";
 import "./utils-2v2HxlWs.js";
 /**
  * @license lucide-react v0.511.0 - ISC

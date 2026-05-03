@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Home-BmvjLbOt.js","assets/types-DBKfhn4T.js","assets/user-plus-i4KnQIBL.js","assets/printer-D4uQe6Dv.js","assets/wifi-BCNKr1LZ.js","assets/shield-6FiU6PC8.js","assets/refresh-cw-CnYHQM3D.js","assets/Enroll-yWghmBgv.js","assets/badge-C-ha7r2N.js","assets/index-C8zD6jex.js","assets/utils-2v2HxlWs.js","assets/button-PW5s1p9c.js","assets/card-CQko05Jj.js","assets/indian-rupee-CjJD7RkQ.js","assets/calendar-D8yT4LZ4.js","assets/Seats-CIKOdpXK.js","assets/skeleton-Cg4P7mLd.js","assets/Notices-Bs4A1dc0.js","assets/plus-BpSav8M0.js","assets/square-pen-BmzW192b.js","assets/trash-2-CYw5hwr2.js","assets/Dashboard-Dg0ip94a.js","assets/triangle-alert-B_hQBXhV.js","assets/Students-BME5Sp8J.js","assets/Revenue-Dng1cQHy.js","assets/Messages-D1EUViqp.js","assets/AdminSettings-Cn6gtdiN.js","assets/PosterPage-DeIyGql2.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Home-aAd1dNyr.js","assets/types-DKmKknrx.js","assets/user-plus-DZCuIYWr.js","assets/printer-kGrqpVCA.js","assets/wifi-BTtWxGpl.js","assets/shield-DMh1kNQS.js","assets/refresh-cw-DaB8MlbW.js","assets/Enroll-CCkmMUED.js","assets/badge-gB9u5iZY.js","assets/index-CuoKMjoF.js","assets/utils-2v2HxlWs.js","assets/button-CMXWIWyh.js","assets/card-OHuLbmmG.js","assets/indian-rupee-C-ZG16cd.js","assets/calendar-TXNmPpyV.js","assets/Seats-B_CxZLGF.js","assets/skeleton-YomDqqRk.js","assets/Notices-CDmYU36S.js","assets/plus-D-bQ0k3z.js","assets/square-pen-B5cX_klP.js","assets/trash-2-C5HaXbcR.js","assets/Dashboard-Bop3xIIS.js","assets/triangle-alert-CpDn45co.js","assets/Students-BZYHw-A1.js","assets/Revenue-DGe_2PQ7.js","assets/Messages-47sUHYGR.js","assets/AdminSettings-G4Af8qhe.js","assets/PosterPage-yRRpXJLa.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __typeError = (msg) => {
   throw TypeError(msg);
@@ -34510,6 +34510,7 @@ const navLinks = [
   { to: "/enroll", label: "Enroll", icon: Users }
 ];
 const adminLinks = [
+  { to: "/", label: "Home", icon: BookOpen },
   { to: "/admin", label: "Dashboard", icon: LayoutDashboard },
   { to: "/admin/students", label: "Students", icon: Users },
   { to: "/admin/revenue", label: "Revenue", icon: TrendingUp },
@@ -34695,38 +34696,38 @@ function Layout({ children }) {
   ] });
 }
 const LazyHome = reactExports.lazy(
-  () => __vitePreload(() => import("./Home-BmvjLbOt.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0).then((m2) => ({ default: m2.HomePage }))
+  () => __vitePreload(() => import("./Home-aAd1dNyr.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0).then((m2) => ({ default: m2.HomePage }))
 );
 const LazyEnroll = reactExports.lazy(
-  () => __vitePreload(() => import("./Enroll-yWghmBgv.js"), true ? __vite__mapDeps([7,8,9,10,11,12,1,3,2,13,14]) : void 0).then((m2) => ({ default: m2.EnrollPage }))
+  () => __vitePreload(() => import("./Enroll-CCkmMUED.js"), true ? __vite__mapDeps([7,8,9,10,11,12,1,3,2,13,14]) : void 0).then((m2) => ({ default: m2.EnrollPage }))
 );
 const LazySeats = reactExports.lazy(
-  () => __vitePreload(() => import("./Seats-CIKOdpXK.js"), true ? __vite__mapDeps([15,11,9,10,16,1,6]) : void 0).then((m2) => ({ default: m2.SeatsPage }))
+  () => __vitePreload(() => import("./Seats-B_CxZLGF.js"), true ? __vite__mapDeps([15,11,9,10,16,1,6]) : void 0).then((m2) => ({ default: m2.SeatsPage }))
 );
 const LazyNotices = reactExports.lazy(
-  () => __vitePreload(() => import("./Notices-Bs4A1dc0.js"), true ? __vite__mapDeps([17,16,10,1,18,14,19,20]) : void 0).then((m2) => ({ default: m2.NoticesPage }))
+  () => __vitePreload(() => import("./Notices-CDmYU36S.js"), true ? __vite__mapDeps([17,16,10,1,18,14,19,20]) : void 0).then((m2) => ({ default: m2.NoticesPage }))
 );
 const LazyAdminDashboard = reactExports.lazy(
-  () => __vitePreload(() => import("./Dashboard-Dg0ip94a.js"), true ? __vite__mapDeps([21,8,9,10,12,16,1,13,22]) : void 0).then((m2) => ({
+  () => __vitePreload(() => import("./Dashboard-Bop3xIIS.js"), true ? __vite__mapDeps([21,8,9,10,12,16,1,13,22]) : void 0).then((m2) => ({
     default: m2.AdminDashboard
   }))
 );
 const LazyAdminStudents = reactExports.lazy(
-  () => __vitePreload(() => import("./Students-BME5Sp8J.js"), true ? __vite__mapDeps([23,8,9,10,12,16,1,20,19,22]) : void 0).then((m2) => ({ default: m2.AdminStudents }))
+  () => __vitePreload(() => import("./Students-BZYHw-A1.js"), true ? __vite__mapDeps([23,8,9,10,12,16,1,20,19,22]) : void 0).then((m2) => ({ default: m2.AdminStudents }))
 );
 const LazyAdminRevenue = reactExports.lazy(
-  () => __vitePreload(() => import("./Revenue-Dng1cQHy.js"), true ? __vite__mapDeps([24,12,10,16,1,13]) : void 0).then((m2) => ({ default: m2.AdminRevenue }))
+  () => __vitePreload(() => import("./Revenue-DGe_2PQ7.js"), true ? __vite__mapDeps([24,12,10,16,1,13]) : void 0).then((m2) => ({ default: m2.AdminRevenue }))
 );
 const LazyAdminMessages = reactExports.lazy(
-  () => __vitePreload(() => import("./Messages-D1EUViqp.js"), true ? __vite__mapDeps([25,8,9,10,12,16,1]) : void 0).then((m2) => ({ default: m2.AdminMessages }))
+  () => __vitePreload(() => import("./Messages-47sUHYGR.js"), true ? __vite__mapDeps([25,8,9,10,12,16,1]) : void 0).then((m2) => ({ default: m2.AdminMessages }))
 );
 const LazyAdminSettings = reactExports.lazy(
-  () => __vitePreload(() => import("./AdminSettings-Cn6gtdiN.js"), true ? __vite__mapDeps([26,8,9,10,16,1,5,18,20]) : void 0).then((m2) => ({
+  () => __vitePreload(() => import("./AdminSettings-G4Af8qhe.js"), true ? __vite__mapDeps([26,8,9,10,16,1,5,18,20]) : void 0).then((m2) => ({
     default: m2.AdminSettings
   }))
 );
 const LazyPoster = reactExports.lazy(
-  () => __vitePreload(() => import("./PosterPage-DeIyGql2.js"), true ? __vite__mapDeps([27,1,4,3]) : void 0).then((m2) => ({ default: m2.PosterPage }))
+  () => __vitePreload(() => import("./PosterPage-yRRpXJLa.js"), true ? __vite__mapDeps([27,1,4,3]) : void 0).then((m2) => ({ default: m2.PosterPage }))
 );
 function Wrap({ children }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(

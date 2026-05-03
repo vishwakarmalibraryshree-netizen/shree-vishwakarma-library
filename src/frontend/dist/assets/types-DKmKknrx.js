@@ -1,4 +1,4 @@
-import { s as useActor, t as useQuery, i as useQueryClient, v as useMutation, _ as __vitePreload, w as createActor, F as FeesType, S as SenderRole } from "./index-BdhHuDeJ.js";
+import { s as useActor, t as useQuery, i as useQueryClient, v as useMutation, _ as __vitePreload, w as createActor, F as FeesType, S as SenderRole } from "./index-BX6EltLE.js";
 function useAllStudents() {
   const { actor, isFetching } = useActor(createActor);
   return useQuery({

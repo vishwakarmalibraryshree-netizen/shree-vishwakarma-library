@@ -30,6 +30,7 @@ const navLinks = [
 ];
 
 const adminLinks = [
+  { to: "/", label: "Home", icon: BookOpen },
   { to: "/admin", label: "Dashboard", icon: LayoutDashboard },
   { to: "/admin/students", label: "Students", icon: Users },
   { to: "/admin/revenue", label: "Revenue", icon: TrendingUp },

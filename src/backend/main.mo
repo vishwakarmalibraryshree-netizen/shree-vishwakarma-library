@@ -49,6 +49,9 @@ actor {
       let nextId = QuoteLib.seedDefaults(quotes, nextQuoteId.at(0));
       nextQuoteId.put(0, nextId);
     };
+    // Always refresh admin credentials so hash stays in sync after upgrades.
+    // This ensures admin/admin123 works even if an older hash was persisted.
+    admin.put(0, SettingsLib.defaultAdmin());
   };
 
   // Mixins — seats shared between students-api and seats-api for auto-occupancy sync

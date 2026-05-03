@@ -1,7 +1,7 @@
-import { j as jsxRuntimeExports, b as BookOpen, L as Lock, M as MapPin } from "./index-BdhHuDeJ.js";
-import { f as useSettings, g as useRandomQuote } from "./types-DBKfhn4T.js";
-import { W as Wifi, C as Cpu, D as Droplets, a as Camera, N as Newspaper, b as Check, c as Clock } from "./wifi-BCNKr1LZ.js";
-import { P as Printer, a as Phone } from "./printer-D4uQe6Dv.js";
+import { j as jsxRuntimeExports, b as BookOpen, L as Lock, M as MapPin } from "./index-BX6EltLE.js";
+import { f as useSettings, g as useRandomQuote } from "./types-DKmKknrx.js";
+import { W as Wifi, C as Cpu, D as Droplets, a as Camera, N as Newspaper, b as Check, c as Clock } from "./wifi-BTtWxGpl.js";
+import { P as Printer, a as Phone } from "./printer-kGrqpVCA.js";
 const facilities = [
   { icon: Wifi, label: "Free WiFi" },
   { icon: Cpu, label: "AC Rooms" },
